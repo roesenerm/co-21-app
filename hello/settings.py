@@ -36,8 +36,8 @@ DATABASES['default'] = dj_database_url.config(conn_max_age=600)
     The quoted string on the right hand side is the name of the environment
     variable that is loaded by the dotenv package.
 '''
-TWO1_WALLET_MNEMONIC = process.env.TWO1_WALLET_MNEMONIC || os.environ.get("TWO1_WALLET_MNEMONIC")
-TWO1_USERNAME = process.env.TWO1_USERNAME || os.environ.get("TWO1_USERNAME")
+TWO1_WALLET_MNEMONIC = process.env.TWO1_WALLET_MNEMONIC or os.environ.get("TWO1_WALLET_MNEMONIC")
+TWO1_USERNAME = process.env.TWO1_USERNAME or os.environ.get("TWO1_USERNAME")
 WALLET = Two1Wallet.import_from_mnemonic(mnemonic=TWO1_WALLET_MNEMONIC)
 
 # Quick-start development settings - unsuitable for production
