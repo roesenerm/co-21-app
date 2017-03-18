@@ -1,0 +1,40 @@
+swagger: '2.0'
+info:
+  title: Hello 21!
+  description: A hello world app hosted on heroku using Django. 
+  termsOfService: https://opensource.org/licenses/MIT
+  x-21-usage: ''
+  x-21-quick-buy: |
+    $ 21 buy "https://co-21-app.herokuapp.com/buy"
+  x-21-category: utilities
+  x-21-app-image: https://cdn.filepicker.io/api/file/uoKNPUNSjawUw22HeDAo
+  x-21-total-price:
+    min: 100 
+    max: 100
+  contact:
+    name: Matthew Roesener
+    email: roesenerm@gmail.com
+    url: https://21.co
+  license:
+    name: MIT LICENSE
+    url: https://opensource.org/licenses/MIT
+  x-21-keywords:
+    - tutorial
+    - heroku
+    - django
+  version: '0.3'
+host: co-21-app.herokuapp.com
+schemes:
+  - https
+basePath: /
+paths:
+  /buy:
+    get:
+      summary: buy a hello world message 
+      produces:
+        - text/plain
+      responses:
+        200:
+          description: a hello world message 
+          schema:
+            type: text 
