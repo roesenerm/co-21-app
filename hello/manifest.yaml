@@ -37,4 +37,4 @@ paths:
         200:
           description: a hello world message 
             schema:
-            type: text
+              type: text
