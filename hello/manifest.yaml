@@ -4,8 +4,7 @@ info:
   description: A hello world app hosted on heroku using Django. 
   termsOfService: https://opensource.org/licenses/MIT
   x-21-usage: ''
-  x-21-quick-buy: |
-    $ 21 buy "https://co-21-app.herokuapp.com/buy"
+  x-21-quick-buy: $ 21 buy "https://co-21-app.herokuapp.com/buy"
   x-21-category: utilities
   x-21-app-image: https://cdn.filepicker.io/api/file/uoKNPUNSjawUw22HeDAo
   x-21-total-price:
